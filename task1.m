@@ -5,8 +5,8 @@ close all;
 %Addition and multiplication of two signals
 x1=input('Enter the sequence of first signal:');
 x2=input('Enter the sequence of second signal:');
-l1=length(x1);
-l2=length(x2);
+l1=length(x1)
+l2=length(x2)
 subplot(2,2,1);
 stem(0:l1-1,x1);
 xlabel('time');
@@ -18,7 +18,7 @@ xlabel('time');
 ylabel('Amplitude');
 title('Input sequence 2');
 if l1>l2
-l3=l1-l2;
+l3=l1-l2
 x2=[x2,zeros(1,l3)];
 y1=x1+x2;
 subplot(2,2,3);
@@ -34,7 +34,7 @@ ylabel('Amplitude');
 title('Multiplication of two signals');
 end
 if l2>l1
-l3=l2-l1;
+l3=l2-l1
 x1=[x1,zeros(1,l3)];
 y1=x1+x2;
 subplot(2,2,3);

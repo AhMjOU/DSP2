@@ -7,7 +7,7 @@ f=input('Enter the Timeperiod:');
 t=-10:1:20;
 x=a*sin(2*pi*f*t);
 subplot(3,1,1);
-plot(t,x);
+stem(t,x);
 xlabel('time');
 ylabel('Amplitude');
 title('Sinusoidal signal');
